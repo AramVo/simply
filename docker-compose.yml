@@ -11,4 +11,6 @@ services:
   mongoDB:
     image: mongo
     ports:
-      - "${DB_PORT}:${DB_PORT}"
+      - "27017:27017"
+    hostname: ${DB_HOST}
+
